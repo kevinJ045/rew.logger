@@ -4,6 +4,7 @@ manifest:
 exec:
   entry: main.coffee
   default: default.coffee
+  usage: usage.coffee
 assets:
   icon: assets/icon.png
   folder: ./assets

@@ -157,6 +157,16 @@ export Logger = class Logger
       warningColor: '1;33'
   }
 
+  constructor: (options) ->
+    unless options then options = {}
+    for i of options
+      if @options[i] and typeof @options[i] isnt "object"
+        @options[i] = options[i]
+      else
+        for j of options[i]
+          @options[i][j] = options[i][j]
+    @
+
   log: (...text) -> writeInfoLog @options, text...
   warn: (...text) -> writeWarnLog @options, text...
   error: (...text) -> writeErrorLog @options, text...
