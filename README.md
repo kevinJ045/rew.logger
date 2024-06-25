@@ -17,7 +17,7 @@ rew install -yu github:kevinJ045/rew.logger
 
 ## Usage
 ```coffee
-import Logger from "rew.logger"
+import { Logger } from "rew.logger"
 
 logger = new Logger
 
