@@ -1,0 +1,11 @@
+manifest:
+  package: rew.logger
+  private: false
+exec:
+  entry: main.coffee
+  default: default.coffee
+assets:
+  icon: assets/icon.png
+  folder: ./assets
+install:
+  requirements: []
